@@ -1,0 +1,394 @@
+[
+  {
+    "id": "v1",
+    "name": "Acme Fasteners Ltd.",
+    "category": "Industrial supplies",
+    "domain": "acmefasteners.example",
+    "verifiedContact": "Maya Brooks",
+    "verifiedPhone": "+1 (202) 555-0101",
+    "contactVerifiedAt": "2026-04-15",
+    "knownBankAccounts": [
+      "XXXX4471"
+    ],
+    "typicalAmountRange": [
+      6000,
+      9500
+    ],
+    "typicalTone": "routine and professional",
+    "currency": "USD",
+    "invoiceHistory": [
+      {
+        "invoiceNumber": "HIST-V1-001",
+        "date": "2026-05-15",
+        "amount": 8420,
+        "bankAccount": "XXXX4471",
+        "requesterEmail": "billing@acmefasteners.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      },
+      {
+        "invoiceNumber": "HIST-V1-002",
+        "date": "2026-06-15",
+        "amount": 7900,
+        "bankAccount": "XXXX4471",
+        "requesterEmail": "billing@acmefasteners.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      },
+      {
+        "invoiceNumber": "HIST-V1-003",
+        "date": "2026-07-15",
+        "amount": 8100,
+        "bankAccount": "XXXX4471",
+        "requesterEmail": "billing@acmefasteners.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      },
+      {
+        "invoiceNumber": "HIST-V1-004",
+        "date": "2026-08-15",
+        "amount": 8600,
+        "bankAccount": "XXXX4471",
+        "requesterEmail": "billing@acmefasteners.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      }
+    ]
+  },
+  {
+    "id": "v2",
+    "name": "BrightPath Logistics",
+    "category": "Freight & logistics",
+    "domain": "brightpathlogistics.example",
+    "verifiedContact": "Ethan Cole",
+    "verifiedPhone": "+1 (202) 555-0102",
+    "contactVerifiedAt": "2026-04-15",
+    "knownBankAccounts": [
+      "XXXX2210"
+    ],
+    "typicalAmountRange": [
+      2000,
+      5000
+    ],
+    "typicalTone": "routine and professional",
+    "currency": "USD",
+    "invoiceHistory": [
+      {
+        "invoiceNumber": "HIST-V2-001",
+        "date": "2026-05-15",
+        "amount": 3200,
+        "bankAccount": "XXXX2210",
+        "requesterEmail": "billing@brightpathlogistics.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      },
+      {
+        "invoiceNumber": "HIST-V2-002",
+        "date": "2026-06-15",
+        "amount": 2950,
+        "bankAccount": "XXXX2210",
+        "requesterEmail": "billing@brightpathlogistics.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      },
+      {
+        "invoiceNumber": "HIST-V2-003",
+        "date": "2026-07-15",
+        "amount": 4100,
+        "bankAccount": "XXXX2210",
+        "requesterEmail": "billing@brightpathlogistics.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      },
+      {
+        "invoiceNumber": "HIST-V2-004",
+        "date": "2026-08-15",
+        "amount": 3600,
+        "bankAccount": "XXXX2210",
+        "requesterEmail": "billing@brightpathlogistics.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      }
+    ]
+  },
+  {
+    "id": "v3",
+    "name": "Northwind Office Supplies",
+    "category": "Office essentials",
+    "domain": "northwindoffice.example",
+    "verifiedContact": "Nina Patel",
+    "verifiedPhone": "+1 (202) 555-0103",
+    "contactVerifiedAt": "2026-04-15",
+    "knownBankAccounts": [
+      "XXXX7788"
+    ],
+    "typicalAmountRange": [
+      500,
+      1800
+    ],
+    "typicalTone": "routine and professional",
+    "currency": "USD",
+    "invoiceHistory": [
+      {
+        "invoiceNumber": "HIST-V3-001",
+        "date": "2026-05-15",
+        "amount": 900,
+        "bankAccount": "XXXX7788",
+        "requesterEmail": "billing@northwindoffice.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      },
+      {
+        "invoiceNumber": "HIST-V3-002",
+        "date": "2026-06-15",
+        "amount": 1200,
+        "bankAccount": "XXXX7788",
+        "requesterEmail": "billing@northwindoffice.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      },
+      {
+        "invoiceNumber": "HIST-V3-003",
+        "date": "2026-07-15",
+        "amount": 1450,
+        "bankAccount": "XXXX7788",
+        "requesterEmail": "billing@northwindoffice.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      },
+      {
+        "invoiceNumber": "HIST-V3-004",
+        "date": "2026-08-15",
+        "amount": 780,
+        "bankAccount": "XXXX7788",
+        "requesterEmail": "billing@northwindoffice.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      }
+    ]
+  },
+  {
+    "id": "v4",
+    "name": "Cedar Cloud Services",
+    "category": "Software & cloud",
+    "domain": "cedarcloud.example",
+    "verifiedContact": "Oliver Chen",
+    "verifiedPhone": "+1 (202) 555-0104",
+    "contactVerifiedAt": "2026-04-15",
+    "knownBankAccounts": [
+      "XXXX3092"
+    ],
+    "typicalAmountRange": [
+      1500,
+      2800
+    ],
+    "typicalTone": "routine and professional",
+    "currency": "USD",
+    "invoiceHistory": [
+      {
+        "invoiceNumber": "HIST-V4-001",
+        "date": "2026-05-15",
+        "amount": 1990,
+        "bankAccount": "XXXX3092",
+        "requesterEmail": "billing@cedarcloud.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      },
+      {
+        "invoiceNumber": "HIST-V4-002",
+        "date": "2026-06-15",
+        "amount": 2150,
+        "bankAccount": "XXXX3092",
+        "requesterEmail": "billing@cedarcloud.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      },
+      {
+        "invoiceNumber": "HIST-V4-003",
+        "date": "2026-07-15",
+        "amount": 1990,
+        "bankAccount": "XXXX3092",
+        "requesterEmail": "billing@cedarcloud.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      },
+      {
+        "invoiceNumber": "HIST-V4-004",
+        "date": "2026-08-15",
+        "amount": 2350,
+        "bankAccount": "XXXX3092",
+        "requesterEmail": "billing@cedarcloud.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      }
+    ]
+  },
+  {
+    "id": "v5",
+    "name": "Harbor Creative Studio",
+    "category": "Design & marketing",
+    "domain": "harborcreative.example",
+    "verifiedContact": "Ava Morgan",
+    "verifiedPhone": "+1 (202) 555-0105",
+    "contactVerifiedAt": "2026-04-15",
+    "knownBankAccounts": [
+      "XXXX6624"
+    ],
+    "typicalAmountRange": [
+      3000,
+      7500
+    ],
+    "typicalTone": "routine and professional",
+    "currency": "USD",
+    "invoiceHistory": [
+      {
+        "invoiceNumber": "HIST-V5-001",
+        "date": "2026-05-15",
+        "amount": 4800,
+        "bankAccount": "XXXX6624",
+        "requesterEmail": "billing@harborcreative.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      },
+      {
+        "invoiceNumber": "HIST-V5-002",
+        "date": "2026-06-15",
+        "amount": 6200,
+        "bankAccount": "XXXX6624",
+        "requesterEmail": "billing@harborcreative.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      },
+      {
+        "invoiceNumber": "HIST-V5-003",
+        "date": "2026-07-15",
+        "amount": 5100,
+        "bankAccount": "XXXX6624",
+        "requesterEmail": "billing@harborcreative.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      },
+      {
+        "invoiceNumber": "HIST-V5-004",
+        "date": "2026-08-15",
+        "amount": 5800,
+        "bankAccount": "XXXX6624",
+        "requesterEmail": "billing@harborcreative.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      }
+    ]
+  },
+  {
+    "id": "v6",
+    "name": "Solstice Facilities",
+    "category": "Facilities & maintenance",
+    "domain": "solsticefacilities.example",
+    "verifiedContact": "Daniel Reed",
+    "verifiedPhone": "+1 (202) 555-0106",
+    "contactVerifiedAt": "2026-04-15",
+    "knownBankAccounts": [
+      "XXXX8156"
+    ],
+    "typicalAmountRange": [
+      800,
+      2400
+    ],
+    "typicalTone": "routine and professional",
+    "currency": "USD",
+    "invoiceHistory": [
+      {
+        "invoiceNumber": "HIST-V6-001",
+        "date": "2026-05-15",
+        "amount": 1200,
+        "bankAccount": "XXXX8156",
+        "requesterEmail": "billing@solsticefacilities.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      },
+      {
+        "invoiceNumber": "HIST-V6-002",
+        "date": "2026-06-15",
+        "amount": 1850,
+        "bankAccount": "XXXX8156",
+        "requesterEmail": "billing@solsticefacilities.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      },
+      {
+        "invoiceNumber": "HIST-V6-003",
+        "date": "2026-07-15",
+        "amount": 1600,
+        "bankAccount": "XXXX8156",
+        "requesterEmail": "billing@solsticefacilities.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      },
+      {
+        "invoiceNumber": "HIST-V6-004",
+        "date": "2026-08-15",
+        "amount": 1400,
+        "bankAccount": "XXXX8156",
+        "requesterEmail": "billing@solsticefacilities.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      }
+    ]
+  },
+  {
+    "id": "v7",
+    "name": "Meridian Packaging Co.",
+    "category": "Packaging materials",
+    "domain": "meridianpackaging.example",
+    "verifiedContact": "Sofia Lane",
+    "verifiedPhone": "+1 (202) 555-0107",
+    "contactVerifiedAt": "2026-04-15",
+    "knownBankAccounts": [
+      "XXXX5043"
+    ],
+    "typicalAmountRange": [
+      4000,
+      9000
+    ],
+    "typicalTone": "routine and professional",
+    "currency": "USD",
+    "invoiceHistory": [
+      {
+        "invoiceNumber": "HIST-V7-001",
+        "date": "2026-05-15",
+        "amount": 6200,
+        "bankAccount": "XXXX5043",
+        "requesterEmail": "billing@meridianpackaging.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      },
+      {
+        "invoiceNumber": "HIST-V7-002",
+        "date": "2026-06-15",
+        "amount": 7400,
+        "bankAccount": "XXXX5043",
+        "requesterEmail": "billing@meridianpackaging.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      },
+      {
+        "invoiceNumber": "HIST-V7-003",
+        "date": "2026-07-15",
+        "amount": 5900,
+        "bankAccount": "XXXX5043",
+        "requesterEmail": "billing@meridianpackaging.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      },
+      {
+        "invoiceNumber": "HIST-V7-004",
+        "date": "2026-08-15",
+        "amount": 8100,
+        "bankAccount": "XXXX5043",
+        "requesterEmail": "billing@meridianpackaging.example",
+        "tone": "normal",
+        "emailText": "Please find the monthly invoice attached. Thank you for your continued partnership."
+      }
+    ]
+  }
+]

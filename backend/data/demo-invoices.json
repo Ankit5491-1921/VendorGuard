@@ -1,0 +1,68 @@
+{
+  "low": {
+    "vendorName": "Acme Fasteners Ltd.",
+    "amount": 8420,
+    "bankAccount": "XXXX4471",
+    "requesterEmail": "billing@acmefasteners.example",
+    "emailText": "Please find our invoice attached for the regular monthly order. Payment is due under our usual terms. Thank you.",
+    "invoiceNumber": "ACM-2026-091"
+  },
+  "high": {
+    "vendorName": "Acme Fasteners Ltd.",
+    "amount": 8420,
+    "bankAccount": "XXXX9903",
+    "requesterEmail": "billing@acmefasteners.example",
+    "emailText": "Our bank details have changed. Please process today, I'm in back-to-back meetings. Send payment to the new account shown above. Call +1 (202) 555-0199 if you need anything.",
+    "invoiceNumber": "ACM-2026-092"
+  },
+  "initial": [
+    {
+      "vendorName": "Solstice Facilities",
+      "amount": 1400,
+      "bankAccount": "XXXX8156",
+      "requesterEmail": "billing@solsticefacilities.example",
+      "emailText": "Please find our invoice attached for the regular monthly order. Payment is due under our usual terms. Thank you.",
+      "invoiceNumber": "SOL-2026-044"
+    },
+    {
+      "vendorName": "Cedar Cloud Services",
+      "amount": 1990,
+      "bankAccount": "XXXX3092",
+      "requesterEmail": "billing@cedarcloud.example",
+      "emailText": "Please find our invoice attached for the regular monthly order. Payment is due under our usual terms. Thank you.",
+      "invoiceNumber": "CDR-2026-028"
+    },
+    {
+      "vendorName": "Northwind Office Supplies",
+      "amount": 1200,
+      "bankAccount": "XXXX7788",
+      "requesterEmail": "billing@northwindoffice.example",
+      "emailText": "Please find our invoice attached for the regular monthly order. Payment is due under our usual terms. Thank you.",
+      "invoiceNumber": "NWO-2026-116"
+    },
+    {
+      "vendorName": "BrightPath Logistics",
+      "amount": 7400,
+      "bankAccount": "XXXX2210",
+      "requesterEmail": "billing@brightpathlogistics.example",
+      "emailText": "Please find our invoice attached for the regular monthly order. Payment is due under our usual terms. Thank you.",
+      "invoiceNumber": "BPL-2026-083"
+    },
+    {
+      "vendorName": "Acme Fasteners Ltd.",
+      "amount": 8420,
+      "bankAccount": "XXXX4471",
+      "requesterEmail": "billing@acmefasteners.example",
+      "emailText": "Please find our invoice attached for the regular monthly order. Payment is due under our usual terms. Thank you.",
+      "invoiceNumber": "ACM-2026-091"
+    },
+    {
+      "vendorName": "Acme Fasteners Ltd.",
+      "amount": 8420,
+      "bankAccount": "XXXX9903",
+      "requesterEmail": "billing@acmefasteners.example",
+      "emailText": "Our bank details have changed. Please process today, I'm in back-to-back meetings. Send payment to the new account shown above. Call +1 (202) 555-0199 if you need anything.",
+      "invoiceNumber": "ACM-2026-092"
+    }
+  ]
+}

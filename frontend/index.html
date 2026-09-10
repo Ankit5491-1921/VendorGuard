@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1E2761" />
+    <meta
+      name="description"
+      content="VendorGuard — explainable invoice risk review and trusted vendor verification."
+    />
+    <title>VendorGuard · Payment risk workspace</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <svg
+      class="icon-library"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <symbol id="i-shield" viewBox="0 0 24 24">
+        <path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z" />
+        <path d="m8 12 3 3 5-6" />
+      </symbol>
+      <symbol id="i-grid" viewBox="0 0 24 24">
+        <rect x="3" y="3" width="7" height="7" rx="1" />
+        <rect x="14" y="3" width="7" height="7" rx="1" />
+        <rect x="3" y="14" width="7" height="7" rx="1" />
+        <rect x="14" y="14" width="7" height="7" rx="1" />
+      </symbol>
+      <symbol id="i-users" viewBox="0 0 24 24">
+        <circle cx="9" cy="8" r="3" />
+        <path
+          d="M3 21v-3a6 6 0 0 1 12 0v3M16 5a3 3 0 0 1 0 6m2 3a5 5 0 0 1 3 5v2"
+        />
+      </symbol>
+      <symbol id="i-flow" viewBox="0 0 24 24">
+        <rect x="3" y="3" width="6" height="6" rx="1" />
+        <rect x="15" y="15" width="6" height="6" rx="1" />
+        <path d="M9 6h6a3 3 0 0 1 3 3v6M15 18H9a3 3 0 0 1-3-3V9" />
+      </symbol>
+      <symbol id="i-file" viewBox="0 0 24 24">
+        <path d="M14 3H5v18h14V8l-5-5Z M14 3v5h5M8 12h8m-8 4h6" />
+      </symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24">
+        <path
+          d="m4 3 4 1 1 5-2 2a14 14 0 0 0 6 6l2-2 5 1 1 4c-9 4-22-9-17-17Z"
+        />
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24">
+        <path d="M4 12h16m-6-6 6 6-6 6" />
+      </symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24">
+        <path d="M12 5v14M5 12h14" />
+      </symbol>
+      <symbol id="i-check" viewBox="0 0 24 24">
+        <path d="m5 12 4 4L19 6" />
+      </symbol>
+      <symbol id="i-search" viewBox="0 0 24 24">
+        <circle cx="10" cy="10" r="6" />
+        <path d="m15 15 6 6" />
+      </symbol>
+      <symbol id="i-close" viewBox="0 0 24 24">
+        <path d="m6 6 12 12M6 18 18 6" />
+      </symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24">
+        <path d="M12 3 2 21h20L12 3Zm0 6v5m0 3v1" />
+      </symbol>
+    </svg>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <aside class="sidebar">
+      <a class="brand" href="/" aria-label="VendorGuard home"
+        ><span class="brand-mark"
+          ><svg class="icon"><use href="#i-shield" /></svg></span
+        >VendorGuard<span class="brand-dot">.</span></a
+      >
+      <div class="workspace">
+        <span class="workspace-avatar">VG</span>
+        <div>Finance workspace<small>Hackathon edition</small></div>
+        <span class="workspace-chevron">⌄</span>
+      </div>
+      <p class="nav-label">WORKSPACE</p>
+      <nav aria-label="Main navigation">
+        <button
+          class="nav-item active"
+          data-view="overview"
+          aria-current="page"
+        >
+          <svg class="icon"><use href="#i-grid" /></svg>Overview
+        </button>
+        <button class="nav-item" data-view="verification">
+          <svg class="icon"><use href="#i-phone" /></svg>Verification queue<span
+            id="nav-pending"
+            class="nav-count"
+            >0</span
+          >
+        </button>
+        <button class="nav-item" data-view="vendors">
+          <svg class="icon"><use href="#i-users" /></svg>Vendor directory
+        </button>
+        <button class="nav-item" data-view="pipeline">
+          <svg class="icon"><use href="#i-flow" /></svg>How it works
+        </button>
+      </nav>
+      <div class="sidebar-note">
+        <svg class="icon"><use href="#i-shield" /></svg
+        ><strong>A trusted second look.</strong>
+        <p>Every invoice checked.<br />Every decision explained.</p>
+        <span>4 agents. One clear decision.</span>
+      </div>
+      <div class="sidebar-footer">
+        <span class="avatar">AN</span>
+        <div>Demo analyst<small>Local workspace</small></div>
+        <span class="online-dot"></span>
+      </div>
+    </aside>
+    <div class="shell">
+      <header class="topbar">
+        <div class="breadcrumb">
+          Workspace <span>/</span> <strong id="breadcrumb">Overview</strong>
+        </div>
+        <div class="topbar-status">
+          <span id="connection" class="connection"
+            ><span class="online-dot"></span>Connecting</span
+          ><span class="demo-label">DEMO</span>
+        </div>
+      </header>
+      <main id="main" tabindex="-1">
+        <div class="page-heading">
+          <div>
+            <p class="eyebrow">VENDOR PAYMENT INTELLIGENCE</p>
+            <h1 id="page-title">Payment risk overview</h1>
+            <p id="page-subtitle" class="subtitle">
+              Catch the change. Verify the source. Protect the payment.
+            </p>
+          </div>
+          <button class="button primary" id="new-invoice">
+            <svg class="icon"><use href="#i-plus" /></svg>New invoice
+          </button>
+        </div>
+        <div id="global-error" class="error-banner" role="alert" hidden></div>
+        <section id="overview-view" class="view">
+          <div id="stats" class="stats" aria-label="Invoice statistics"></div>
+          <section class="demo-strip">
+            <div class="demo-strip-icon">
+              <svg class="icon"><use href="#i-flow" /></svg>
+            </div>
+            <div class="demo-strip-text">
+              <strong
+                >Same vendor. Different bank. A very different result.</strong
+              >
+              <p>Try the two-invoice demo to see all four agents in action.</p>
+            </div>
+            <div class="demo-actions">
+              <button class="button secondary small" data-demo="low">
+                Load normal invoice</button
+              ><button class="button coral-soft small" data-demo="high">
+                Load suspicious invoice<svg class="icon">
+                  <use href="#i-arrow" />
+                </svg>
+              </button>
+            </div>
+          </section>
+          <div class="overview-grid">
+            <section class="panel feed-panel">
+              <div class="panel-heading">
+                <div>
+                  <h2>
+                    Invoice activity
+                    <span id="invoice-count" class="count-pill">0</span>
+                  </h2>
+                  <p>Every review, with the evidence behind it.</p>
+                </div>
+                <span class="live-label"
+                  ><span class="online-dot"></span>Live feed</span
+                >
+              </div>
+              <div class="feed-controls">
+                <label class="search-box"
+                  ><svg class="icon"><use href="#i-search" /></svg
+                  ><input
+                    id="search"
+                    aria-label="Search invoices"
+                    placeholder="Search vendor or invoice…"
+                    type="search" /></label
+                ><label class="sr-only" for="risk-filter">Filter by risk</label
+                ><select id="risk-filter">
+                  <option value="all">All risk levels</option>
+                  <option value="high">High risk</option>
+                  <option value="medium">Medium risk</option>
+                  <option value="low">Low risk</option>
+                </select>
+              </div>
+              <div class="table-scroll">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>INVOICE / VENDOR</th>
+                      <th>AMOUNT</th>
+                      <th>RISK LEVEL</th>
+                      <th>PAYMENT STATE</th>
+                      <th><span class="sr-only">Details</span></th>
+                    </tr>
+                  </thead>
+                  <tbody id="feed"></tbody>
+                </table>
+              </div>
+              <div class="panel-footer">
+                <span id="feed-caption">Loading invoices…</span
+                ><span>Updates every 4 seconds</span>
+              </div>
+            </section>
+            <aside class="attention-column">
+              <section class="panel attention-panel">
+                <div class="panel-heading">
+                  <div>
+                    <p class="eyebrow coral-text">ACTION REQUIRED</p>
+                    <h2>Needs a trusted callback</h2>
+                  </div>
+                  <span class="icon-tile coral"
+                    ><svg class="icon"><use href="#i-phone" /></svg
+                  ></span>
+                </div>
+                <div id="attention"></div>
+              </section>
+              <section class="trust-note">
+                <svg class="icon"><use href="#i-shield" /></svg>
+                <div>
+                  <strong>The source matters.</strong>
+                  <p>
+                    Callback numbers come only from the pre-verified vendor
+                    directory. An invoice never gets to choose who verifies it.
+                  </p>
+                </div>
+              </section>
+            </aside>
+          </div>
+          <section class="pipeline-strip" aria-label="Four agent pipeline">
+            <div>
+              <span>01</span><strong>Extract</strong
+              ><small>Structure the invoice</small>
+            </div>
+            <svg class="icon"><use href="#i-arrow" /></svg>
+            <div>
+              <span>02</span><strong>Compare</strong
+              ><small>Check vendor history</small>
+            </div>
+            <svg class="icon"><use href="#i-arrow" /></svg>
+            <div>
+              <span>03</span><strong>Reason</strong
+              ><small>Explain the evidence</small>
+            </div>
+            <svg class="icon"><use href="#i-arrow" /></svg>
+            <div>
+              <span>04</span><strong>Verify</strong
+              ><small>Hold & call if high risk</small>
+            </div>
+          </section>
+        </section>
+        <section id="verification-view" class="view" hidden>
+          <div id="verification-list" class="task-grid"></div>
+        </section>
+        <section id="vendors-view" class="view" hidden>
+          <div class="info-banner">
+            7 fictional vendors · 28 trusted historical invoices · USD demo
+            data. New submissions never change these fingerprints.
+          </div>
+          <div id="vendor-list" class="vendor-grid"></div>
+        </section>
+        <section id="pipeline-view" class="view" hidden>
+          <div class="explain-intro panel">
+            <p class="eyebrow">EXPLAINABLE BY DESIGN</p>
+            <h2>Four agents. An evidence trail you can follow.</h2>
+            <p>
+              Each agent is a small JavaScript module with a single
+              responsibility. The default decision uses transparent rules;
+              optional Azure OpenAI adds an advisory explanation. The same
+              evidence and payment policy remain visible in either mode.
+            </p>
+          </div>
+          <div id="agent-guide" class="guide-grid"></div>
+          <section class="panel policy-panel">
+            <h2>The demo risk policy</h2>
+            <p>
+              Unknown vendor: <strong>+80</strong> · New bank account:
+              <strong>+60</strong> · Domain mismatch: <strong>+35</strong> ·
+              Amount outside range: <strong>+20</strong> · Unusual urgency:
+              <strong>+20</strong>.
+            </p>
+            <p>
+              Scores are capped at 100. <span class="badge low">LOW 0–19</span>
+              <span class="badge medium">MEDIUM 20–59</span>
+              <span class="badge high">HIGH 60–100</span>
+            </p>
+            <p class="muted">
+              These are demonstration weights, not fraud probabilities. A new
+              bank alone requires verification; other deviations add context.
+              Missing email text is explicitly marked as unassessed. No real
+              payments are initiated, blocked, or released by this app.
+            </p>
+          </section>
+        </section>
+        <footer class="page-footer">
+          <span
+            ><svg class="icon"><use href="#i-shield" /></svg>VendorGuard · Built
+            for a more careful payment decision.</span
+          ><span id="mode-label">Local rule-based reasoning</span>
+        </footer>
+      </main>
+    </div>
+    <dialog
+      id="invoice-dialog"
+      class="form-dialog"
+      aria-labelledby="form-title"
+    >
+      <div class="dialog-heading">
+        <div>
+          <p class="eyebrow">FOUR-AGENT REVIEW</p>
+          <h2 id="form-title">Submit an invoice</h2>
+        </div>
+        <button
+          class="icon-button"
+          data-close="invoice-dialog"
+          aria-label="Close invoice form"
+        >
+          <svg class="icon"><use href="#i-close" /></svg>
+        </button>
+      </div>
+      <div class="preset-row">
+        <span>Quick fill</span
+        ><button class="button small secondary" data-demo="low">
+          Normal example</button
+        ><button class="button small coral-soft" data-demo="high">
+          Suspicious example
+        </button>
+      </div>
+      <form id="invoice-form">
+        <div class="form-grid">
+          <label class="full"
+            >Vendor name<input
+              name="vendorName"
+              list="vendor-options"
+              required
+              maxlength="120"
+              placeholder="Choose a vendor or enter a new name" /><datalist
+              id="vendor-options"
+            ></datalist></label
+          ><label
+            >Invoice reference<input
+              name="invoiceNumber"
+              maxlength="50"
+              placeholder="e.g. ACM-2026-093" /></label
+          ><label
+            >Amount (USD)<input
+              name="amount"
+              type="number"
+              min="0.01"
+              max="100000000"
+              step="0.01"
+              required
+              placeholder="8420.00" /></label
+          ><label class="full"
+            >Bank account on this invoice<input
+              name="bankAccount"
+              required
+              maxlength="50"
+              placeholder="e.g. XXXX4471"
+              autocomplete="off" /></label
+          ><label class="full"
+            >Requester email<input
+              name="requesterEmail"
+              type="email"
+              required
+              maxlength="254"
+              placeholder="billing@acmefasteners.example" /></label
+          ><label class="full"
+            >Email message <span class="optional">optional</span
+            ><textarea
+              name="emailText"
+              rows="4"
+              maxlength="10000"
+              placeholder="Paste the message that arrived with the invoice…"
+            ></textarea>
+          </label>
+        </div>
+        <p class="form-note">
+          Structured input demo. Bank references and vendor contacts are
+          fictional.
+        </p>
+        <p id="form-error" class="inline-error" role="alert" hidden></p>
+        <div class="form-actions">
+          <button
+            class="button secondary"
+            type="button"
+            data-close="invoice-dialog"
+          >
+            Cancel</button
+          ><button class="button primary" id="submit-invoice" type="submit">
+            <svg class="icon"><use href="#i-shield" /></svg>Analyze invoice
+          </button>
+        </div>
+      </form>
+    </dialog>
+    <dialog
+      id="detail-dialog"
+      class="detail-dialog"
+      aria-label="Invoice review details"
+    >
+      <div id="detail-content"></div>
+    </dialog>
+    <div id="toast" class="toast" role="status" hidden></div>
+  </body>
+</html>

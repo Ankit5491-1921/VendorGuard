@@ -1,0 +1,8 @@
+{
+  "vendorName": "Acme Fasteners Ltd.",
+  "amount": 8420,
+  "bankAccount": "XXXX9903",
+  "requesterEmail": "billing@acmefasteners.example",
+  "emailText": "Our bank details have changed. Please process today, I'm in back-to-back meetings. Send payment to the new account shown above. Call +1 (202) 555-0199 if you need anything.",
+  "invoiceNumber": "ACM-2026-092"
+}

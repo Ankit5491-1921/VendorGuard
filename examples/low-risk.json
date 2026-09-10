@@ -1,0 +1,8 @@
+{
+  "vendorName": "Acme Fasteners Ltd.",
+  "amount": 8420,
+  "bankAccount": "XXXX4471",
+  "requesterEmail": "billing@acmefasteners.example",
+  "emailText": "Please find our invoice attached for the regular monthly order. Payment is due under our usual terms. Thank you.",
+  "invoiceNumber": "ACM-2026-091"
+}
