@@ -13,7 +13,7 @@ createApp()
     const host = process.env.HOST || "127.0.0.1";
     if (!Number.isInteger(port) || port < 1 || port > 65535)
       throw new Error("PORT must be between 1 and 65535.");
-    const server = app.listen(port, host, () => {
+    const server = app.listen(port, () => {
       console.log(`VendorGuard is running at http://${host}:${port}`);
       console.log(
         "Demo only: local review states; no real payments or phone calls are made.",
